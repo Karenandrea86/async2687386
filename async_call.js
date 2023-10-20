@@ -1,15 +1,14 @@
 //dependencia commonjs
 const request = require('request')
 
-const url = 'https://dinosaur-facts-api.shultzlab.com/dinosaurs'
-//const url = 'https://pokeapi.co/api/v2/pokemon'
+const url = 'https://datausa.io/api/data?drilldowns=Nation&measures=Population'
 
 let r = request(url ,
     {json: true} ,
     (error , respuesta , body) => {
-        let dinosaurios = body
-        dinosaurios.forEach((dinosaurio)=>{
-            console.log(dinosaurio.Name)
+        let datos = body.data
+        datos.forEach((dato)=>{
+            console.log(dato.Population)
             console.log('----------')
         })
     } )

@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node async_await"
+    "dev": "node async_call"
   },
   "keywords": [],
   "author": "",

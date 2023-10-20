@@ -1,8 +1,8 @@
 const axios= require('axios')
 
-const url = 'https://dinosaur-facts-api.shultzlab.com/dinosaurs'
+const url = 'https://datausa.io/api/data?drilldowns=Nation&measures=Population'
 
-async function obtenerDinos(){
+async function obtenerDatosEEUU(){
     try{
         const respuesta = await axios.get(url);
         console.log(respuesta.data)
@@ -10,4 +10,4 @@ async function obtenerDinos(){
         
     }
 }
-obtenerDinos()
+obtenerDatosEEUU()
